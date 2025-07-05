@@ -1,15 +1,10 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +15,59 @@
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif; /* Cuerpo de texto con Roboto */
+}
+
+/* Títulos con Montserrat */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+/* Botones con Inter */
+button, .button {
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Animaciones y demás estilos */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientAnimation 8s ease infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); opacity: 1; }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(2px, -2px); }
+  60% { transform: translate(-2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); opacity: 1; }
+}
+
+@keyframes glitch-shadow {
+  0% { text-shadow: -2px 0 red, 2px 0 blue; }
+  20% { text-shadow: 2px 0 blue, -2px 0 red; }
+  40% { text-shadow: -2px 0 green, 2px 0 magenta; }
+  60% { text-shadow: 2px 0 magenta, -2px 0 green; }
+  80% { text-shadow: -2px 0 cyan, 2px 0 yellow; }
+  100% { text-shadow: 2px 0 yellow, -2px 0 cyan; }
+}
+
+.glitch {
+  display: inline-block;
+  position: relative;
+  animation: glitch 0.5s infinite alternate ease-in-out, glitch-shadow 0.5s infinite alternate ease-in-out;
 }

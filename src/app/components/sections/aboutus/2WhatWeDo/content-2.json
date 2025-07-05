@@ -1,0 +1,30 @@
+{
+    "ESP": {
+        "Planes": {
+            "titular": "Creación de planes comunicativos",
+            "resumen": "Creamos estrategias de contenido personalizadas para redes, web y otros canales, organizamos y calendarizamos procesos según tus necesidades y gestionamos el presupuesto para maximizar resultados."
+        },
+        "Contenidos": {
+            "titular": "Creación de contenidos",
+            "resumen": "Gestionamos la producción integral de contenidos, entregamos kits adaptados a cada plataforma y te asistimos antes y después de la publicación."
+        },
+        "Promocion": {
+            "titular": "Promoción de contenidos",
+            "resumen": "Invertimos en publicidad SEM, optimizamos resultados con SEO y analizamos estratégicamente el impacto de tus campañas."
+        }
+    },
+    "ENG": {
+        "Planes": {
+            "titular": "Creation of Communication Plans",
+            "summary": "We create personalized content strategies for social media, web, and other channels, organize and schedule processes according to your needs, and manage budgets to maximize results."
+        },
+        "Contenidos": {
+            "titular": "Content Creation",
+            "summary": "We manage comprehensive content production, deliver kits tailored to each platform, and assist you before and after publication."
+        },
+        "Promocion": {
+            "titular": "Content Promotion",
+            "summary": "We invest in SEM advertising, optimize results with SEO, and strategically analyze the impact of your campaigns."
+        }
+    }
+}

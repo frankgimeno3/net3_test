@@ -1,0 +1,11 @@
+{
+  "services": {
+    "ESP": "Servicios",
+    "ENG": "Services"
+  },
+
+  "contentGuide": {
+    "ESP":"Guía de contenidos",
+    "ENG":"Content guide"
+  }
+}
